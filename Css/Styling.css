@@ -1,0 +1,124 @@
+/* Hier spreche ich das Tag "section" mit CSS an:*/
+html {
+    font-family: 'Anton', cursive;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+section {
+    display: none;
+}
+
+
+/* Hier spreche ich eine ID mit CSS an:*/
+#home {
+    display: block;
+}
+
+header {
+    background-color: #20bf6f;
+    overflow: hidden;
+    height: 80px;
+    transition: 1s all ease 0s;
+}
+
+header:hover {
+    background-color: #3cde8c;
+}
+
+header div {
+    float: left;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+header img {
+    height: 40px;
+    margin-left: 35px;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+header nav {
+    float: right;
+} h1 {
+    color: #20bf6f;
+
+ }
+
+  h2 {
+      color: #3cde8c;
+  }
+
+nav li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+nav li:first-child {
+    border-left-width: 4px;
+}
+
+nav {
+    margin: 0px auto;
+    display: block;
+    width: 600px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: 0.4s all ease 0s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #20bf6f;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+/* Tabellen formatieren */
+table {
+    width: 100%;
+}
+
+table td {
+    text-align: left;
+    vertical-align: top;
+}
+
+table td.bilderspalte {
+    width: 1%;
+}
+
+table td.bilderspalte img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+
+
+footer {
+    background-color: #20bf6f;
+    color: white;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+footer:hover {
+    background-color: #3cde8c;
+}
