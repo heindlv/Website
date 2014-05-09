@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Valentin Praktikum bei der TechDivision</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Eigene styles -->
+    <link rel="stylesheet" href="Css/Styling.css">
+    <!-- Eigene javascript sachen -->
+    <script src="Js/Script.js"></script>
+
+</head>
+<body role="document">
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="Logo" class="navbar-brand" href="#"><img src="Bilder/td-logo-white.svg"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home" title="Mein Praktikum bei der Firma TechDivision">Home</a></li>
+                <li><a href="#tag1" title="Html Grundlagen mit Markus">Tag 1</a></li>
+                <li><a href="#tag2" title="Styling der Navigation mit Simon">Tag 2</a></li>
+                <li><a href="#tag3" title="*** mit Hans">Tag 3</a></li>
+                <li><a href="#tag4" title="*** mit Sarah und Susanne">Tag 4</a></li>
+                <li><a href="#tag5" title="*** mit Florian">Tag 5</a></li>
+                <li><a href="/gaestebuch.php" title="Gästebuch">Gästebuch</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container" role="main">
+
+    <form method="GET" action="/gaestebuch.php">
+        Vorname: <input type="text" name="vorname"><br>
+        Nachname: <input type="text" name="nachname"><br>
+        Textfeld: <textarea name="text">Hinterlasse mir einen Gruß :-)</textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div>
+        Vorname: <?php if(isset($vorname)) echo $vorname ?>
+    </div>
+    <div>
+        Nachname: <?php if(isset($nachname)) echo $nachname ?>
+    </div>
+    <div>
+        Grußnachricht: <?php if(isset($text)) echo $text ?>
+    </div>
+
+</div>
+
+<footer>
+    footer...
+</footer>
+</div>
+
+</body>
+</html>
